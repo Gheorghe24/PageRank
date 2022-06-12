@@ -1,9 +1,9 @@
-Tema 1 MN
+# Tema 1 MN
 Grosu Gheorghe 
 314 CD
 
 I. Iterative function
-
+-----------------------
 In primul algoritm folosesc formulele din sursa data(wikipedia).
 Citesc primul nr din fisier(numarul de noduri)
 Pentru inceput deschid fisierul cu numele dat ca parametru, 
@@ -17,6 +17,7 @@ O alta matrice din formula este M = (K^-1*A) transpus
 Calculez primii 2 indici pagerank si apoi il calculez de fiecare data pe urmatorul, ii interschimb pana cand diferenta in modul e mai mica decat eroarea data ca parametru, la final returnez indicele cerut
 
 2.PR_Inv
+---------------------
 Am scris destule detalii chiar in functia data.
 Astfel, Prima data descompun matricea A cu algoritmul descompunerii QR al lui Gramschimdt.
 Dupa ce am aflat matricea ortogonala Q si matricea superior triunghiulara R,
@@ -37,12 +38,14 @@ In functie am scris cine este fiecare :
 % x - vectorul solutie 
 % U x = b
 
-3. Algebraic function
+3.Algebraic function
+------------------------
 Aceasta seamana foarte mult cu primul algoritm, singura diferenta fiind faptul ca aici aflu indicele 
 page rank dintr-o formula si am nevoie de inversa implementata la functia anterioara
 Doar aplic formula gasita in surse si atata tot.
 
 4.Apartenenta
+-----------------------
 Primesc ca parametri x(Pr-ul unui nod) si 2 valori.
 Acum trebuie sa aflu coeficientii functiei astfel incat aceasta sa fie continua.M-am informat si am aflat
 ca pentru o functie sa fie continua trebuie ca limita la valoarea din stanga sa fie egala cu limita la valoarea din dreapta
@@ -50,6 +53,7 @@ Inlocuiesc intr-un sistem si imi ies cei 2 coeficienti(a si b).
 Returnez functia.
 
 5.PageRank(ultima functie)
+--------------------------
 Citesc iarasi din fisier la fel ca in celelalte 2 functii de la inceput(doar ptu a-mi salva cele 2 valori la final)
 Aflu indicii pagerank prin ambele metode.
 Inchid fisierul, ii concatenez la nume ".out" si il deschid.Incep prin a scrie numarul de noduri(pagini)
