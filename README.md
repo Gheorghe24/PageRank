@@ -6,10 +6,12 @@ In the first algorithm I use the formulas from the given source (wikipedia).
 Read first file number (number of nodes)
 First I open the file with the name given as a parameter,
 I initialize vectors and matrices with the given size.
+
 I go through each line so I read the first number (node) and the number of neighbors,
 I go through with a forum to the number of neighbors
 I check if they are not on the main diagonal in the matrix, otherwise in the positions (node, neighbor) 
 I put the value 1 (to keep the links between the pages).
+
 In the column L vector, save the neighbors of each node
 K is a diagonal matrix with values on the diagonal values of L. For that I will need the inverse of K later,
 set the inverse of each element from the beginning (inverse values = 1 / values in the diagonal matrix)
