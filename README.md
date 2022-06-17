@@ -1,4 +1,4 @@
-# Tema 1 MN
+# PageRank & functions in Matlab/Octave
 
 I. Iterative function
 -----------------------
