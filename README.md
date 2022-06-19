@@ -57,7 +57,7 @@ for a function to be continuous the left value limit must be equal to the right 
 I replace in a system and I get the 2 coefficients (a and b).
 I return the function.
 
-5.PageRank(ultima functie)
+5.PageRank(last function)
 --------------------------
 I read again from the file the same as in the other 2 functions from the beginning (just to save my 2 values at the end)
 I find pagerank by both methods.
