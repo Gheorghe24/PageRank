@@ -13,10 +13,13 @@ I check if they are not on the main diagonal in the matrix, otherwise in the pos
 I put the value 1 (to keep the links between the pages).
 
 In the column L vector, save the neighbors of each node
-K is a diagonal matrix with values on the diagonal values of L. For that I will need the inverse of K later,
+K is a diagonal matrix with values on the diagonal values of L.
+For that I will need the inverse of K later,
 set the inverse of each element from the beginning (inverse values = 1 / values in the diagonal matrix)
+
 Another matrix in the formula is transposed M = (K ^ -1 * A)
-I calculate the first 2 pagerank indices and then I calculate the next one each time, I exchange them until the difference in the mode is less than the error given as a parameter, at the end I return the required index
+I calculate the first 2 pagerank indices and then I calculate the next one each time, 
+I exchange them until the difference in the mode is less than the error given as a parameter, at the end I return the required index
 
 2.PR_Inv
 ---------------------
@@ -28,9 +31,11 @@ x (i) is the column in the inverted matrix.
 
 In my case B will be the inverse of the matrix A.
 
-So Q * R * [x1, x2, ..., xn] = In ([e1, e2, e3 ...]) multiply to the left with the transposed matrix
+So 
 
-R * x_i = Q ^ t * e_i
+- Q * R * [x1, x2, ..., xn] = In ([e1, e2, e3 ...]) multiply to the left with the transposed matrix
+
+- R * x_i = Q ^ t * e_i
 
 and so do backwards substitution in the upper triangular matrix.
 
@@ -38,12 +43,13 @@ I took the algorithm from the lab and implemented it in a function according to 
 
 Depending on who I wrote, everyone is:
 
-% solving a triangular upper system
-% U-triangular upper matrix
-% b is the right side of the equation
-% n - matrix size
-% x - solution vector
-% U x = b
+- solving a triangular upper system
+- U-triangular upper matrix
+- b is the right side of the equation
+- n - matrix size
+- x - solution vector
+- U x = b
+
 3.Algebraic function
 ------------------------
 This is very similar to the first algorithm, the only difference being that I find the index here page rank from a formula and I need the inverse implemented at the previous function
