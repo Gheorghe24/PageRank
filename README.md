@@ -1,6 +1,6 @@
 # PageRank & functions in Matlab/Octave
 
-I. Iterative function
+1. Iterative function
 -----------------------
 In the first algorithm I use the formulas from the given source (wikipedia).
 Read first file number (number of nodes)
