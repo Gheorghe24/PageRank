@@ -2,9 +2,9 @@
 
 1. Iterative function
 -----------------------
-In the first algorithm I use the formulas from the given source (wikipedia).
-Read first file number (number of nodes)
-First I open the file with the name given as a parameter,
+In the first algorithm I use the formulas from the given source (wikipedia). \
+I also read the first file number (number of nodes)
+Then I open the file with the name given as a parameter,
 I initialize vectors and matrices with the given size.
 
 I go through each line so I read the first number (node) and the number of neighbors,
@@ -12,13 +12,13 @@ I go through with a forum to the number of neighbors
 I check if they are not on the main diagonal in the matrix, otherwise in the positions (node, neighbor) 
 I put the value 1 (to keep the links between the pages).
 
-In the column L vector, save the neighbors of each node
-K is a diagonal matrix with values on the diagonal values of L.
-For that I will need the inverse of K later,
+In the column L vector, I save the neighbors of each node \
+K is a diagonal matrix with values on the diagonal values of L. 
+For that I will need the inverse of K later, \
 set the inverse of each element from the beginning (inverse values = 1 / values in the diagonal matrix)
 
-Another matrix in the formula is transposed M = (K ^ -1 * A)
-I calculate the first 2 pagerank indices and then I calculate the next one each time, 
+Another matrix in the formula is transposed M = (K ^ -1 * A) \
+I calculate the first 2 pagerank indices and then I calculate the next one each time, \
 I exchange them until the difference in the mode is less than the error given as a parameter, at the end I return the required index
 
 2.PR_Inv
