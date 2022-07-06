@@ -25,9 +25,12 @@ I exchange them until the difference in the mode is less than the error given as
 ---------------------
 I wrote enough details/comments in the given function. Thus, I first decompose the matrix A with Gramschimdt's QR decomposition algorithm. After finding the orthogonal matrix Q and the upper triangular matrix R, I use a function that calculates the elements in my inverted matrix by backwardsubstitution.
 
-From the properties of the matrices above I come to the formula R * x (i) = Q transposed * e_i (e_i is the column i in the identity matrix)
+From the properties of the matrices above I come to the formula
 
-x (i) is the column in the inverted matrix.
+    R * x (i) = Q transposed * e_i 
+- e_i is the column i in the identity matrix)
+
+- x (i) is the column in the inverted matrix.
 
 In my case B will be the inverse of the matrix A.
 
